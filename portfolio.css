@@ -573,6 +573,138 @@ footer {
   transform: translateY(0);
 }
 
+.certs-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 1.2rem;
+}
+
+.cert-card {
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 1.5rem;
+
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(94, 234, 212, 0.25);
+}
+
+.cert-issuer {
+  font-family: var(--ff-mono);
+
+  font-size: 11px;
+
+  color: var(--accent);
+
+  margin-bottom: 0.5rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.cert-name {
+  color: var(--text);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  margin-bottom: 0.6rem;
+}
+
+.cert-meta {
+  font-family: var(--ff-mono);
+
+  font-size: 11px;
+
+  color: var(--dim);
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.edu-card {
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 1.6rem;
+
+  transition: 0.3s;
+}
+
+.edu-card:hover {
+  border-color: rgba(94, 234, 212, 0.25);
+}
+
+.edu-degree {
+  color: var(--text);
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  margin-bottom: 0.3rem;
+}
+
+.edu-school {
+  font-family: var(--ff-mono);
+
+  font-size: 12px;
+
+  color: var(--accent);
+
+  margin-bottom: 0.3rem;
+}
+
+.edu-meta {
+  font-family: var(--ff-mono);
+
+  font-size: 11px;
+
+  color: var(--dim);
+
+  margin-bottom: 0.8rem;
+}
+
+.edu-coursework {
+  margin-top: 0.8rem;
+
+  padding-top: 0.8rem;
+
+  border-top: 1px solid var(--border);
+}
+
+.edu-course-label {
+  font-family: var(--ff-mono);
+
+  font-size: 11px;
+
+  color: var(--dim);
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
 @media (max-width: 680px) {
 
   nav {
